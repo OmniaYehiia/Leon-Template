@@ -177,7 +177,7 @@ html {
 
 /* Start Features */
 .features {
-    /* padding-left: var(--section-padding); */
+    padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
 }
@@ -296,12 +296,13 @@ html {
 }
  .portfolio .portfolio-content .card {
     background-color: white;
+    /* transition: 0.5s; */
 }
 .portfolio .portfolio-content .card img{
     max-width: 100%;
 }
 .portfolio .portfolio-content .card:hover {
-    animation: Shake 0.5s linear infinite;
+    animation: Shake 1s linear infinite;
 }
 .portfolio .portfolio-content .card .info {
     padding: 20px;
@@ -321,13 +322,19 @@ html {
 } */
 @keyframes Shake {
     0% {
+        transform: rotate(0deg);
+    }
+    25% {
         transform: rotate(5deg);
     }
     50% {
+        transform: rotate(0deg);
+    }
+    75% {
         transform: rotate(-5deg);
     }
     100% {
-        transform: rotate(5deg);
+        transform: rotate(0deg);
     }
 }
 /* End protfolio */
@@ -337,7 +344,7 @@ html {
     /* padding-left: var(--section-padding); */ 
     padding-bottom: var(--section-padding);
     padding-top: var(--section-padding);
-    background-color: var(--section-background);
+    background-color: white;
 }
 .about .about-content {
     margin-top: 100px;
